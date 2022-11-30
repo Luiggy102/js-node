@@ -8,3 +8,10 @@ function solution(value) {
 console.log(solution(2));
 console.log(solution('aflskdjfl'));
 console.log(solution(true));
+
+class Vampire {
+    constructor(asdfa) {
+        this.location = props.asdfa
+        console.log(asdfa);
+    }
+}

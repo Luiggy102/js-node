@@ -28,3 +28,18 @@ piedraPapelTijera(piedra)
 piedraPapelTijera(papel)
 piedraPapelTijera(tijera)
 
+
+let i = 1;
+
+while (i <= 10) {
+    console.log(i);
+    i++
+}
+
+let ii = 10
+
+while (ii >= 0) {
+   console.log(ii); 
+    ii --
+}
+

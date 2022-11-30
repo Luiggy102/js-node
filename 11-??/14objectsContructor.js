@@ -13,6 +13,8 @@ const newCar2 = new car('Volkswagen', 'd993', 1992);
 console.log(newCar2);
 
 
+
+
 //
 // ejemplo
 

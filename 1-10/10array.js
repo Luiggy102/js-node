@@ -12,6 +12,7 @@ console.log(fruits[2]);
 
 // agregar elementos al array original 
 let moreFrutis = fruits.push('melon') 
+console.log('push');
 console.log(fruits);
 
 // eliminar el ultimo elemento
