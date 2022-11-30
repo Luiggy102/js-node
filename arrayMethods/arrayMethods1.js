@@ -11,7 +11,7 @@ let articulos = [
 articulos.forEach(articulo => console.log('=== Nombre del articulo: ' + articulo.nombre + ' $' + articulo.costo));
 
 // filter
-// crear un nuevo array a partir de los elementos originales filtrados mediante una función
+// crea un nuevo array a partir de los elementos originales filtrados mediante una función
 
 let articulosMenoreDeMil = articulos.filter(articulo => articulo.costo < 1000)
 
