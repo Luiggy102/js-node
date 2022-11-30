@@ -8,7 +8,7 @@
 
 //¿Nos ayudas? ¿Cómo solucionarías el error?
 
-function solution(cars) { return cars.filter(car => car.licensePlate) };
+function solution(cars) {return cars.filter(car => car.licensePlate)};
 
 const cars = [
   {
