@@ -8,16 +8,7 @@
 
 //¿Nos ayudas? ¿Cómo solucionarías el error?
 
-function solution(cars) {
-  // 👇 Este es el código que no funciona
-  return cars.find(function (car) {
-    if (car.licensePlate) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-}
+function solution(cars) { return cars.filter(car => car.licensePlate) };
 
 const cars = [
   {
