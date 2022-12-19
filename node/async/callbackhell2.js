@@ -21,14 +21,16 @@ function bye(name, anotherCallback) {
 //hello('Charles', (name) => bye(name, () => console.log('Finishing process...'), 1000));
 
 function speak(speakCallback) {
-    console.log('bla, bla, bla');
-    speakCallback();
+    setTimeout(() => {
+        console.log('bla, bla, bla');
+        speakCallback();
+    }, 1000);
 }
 
 // Repetir la funcion speak, dependiendo del numero de veces
 function conversation(name, times, conversationCallback) {
     if (times > 0) {
-        setTimeout(() => speak(() => conversation(name, --times, conversationCallback)), 1000);
+        speak(() => conversation(name, --times, conversationCallback))
     } else {
         conversationCallback(name);
     }
