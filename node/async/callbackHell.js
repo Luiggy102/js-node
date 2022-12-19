@@ -4,8 +4,7 @@
 
 function saludar(nombre, callback) {
     setTimeout(() => {
-        console.log('hola ' + nombre);
-        callback(nombre); // para pasar el parametro nombre a otra funcion
+        console.log('hola ' + nombre); callback(nombre); // para pasar el parametro nombre a otra funcion
     }, 1000);
 };
 
@@ -53,7 +52,7 @@ function conversacion(nombre, vecesDeConversacion, callback) {
 };
 
 saludar('Joe', function(nombre) {
-    conversacion(nombre, 4, function() {
+    conversacion(nombre, 3, function() {
         console.log('end process...')
     })
-})
+});
