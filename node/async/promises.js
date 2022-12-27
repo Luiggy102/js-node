@@ -1,20 +1,17 @@
-// Nueva forma de asincornia: Promesas
-// Beben de los callbacks
-// Pueden tener estados: resueltas, pendientes, fallar
+/*
 
-//function hello(name, myCallback) {
-    //setTimeout(() => {
-        //console.log('Hola ' + name);
-        //myCallback(name)
-    //}, 1000);
-//}
+ Nueva forma de asincornia: Promesas
+ Beben de los callbacks
+ Pueden tener estados: resueltas, pendientes, fallar
+
+ */
 
 function hello(name) {
     return new Promise(function(resolve) {
         setTimeout(() => {
             console.log(`Hola ${name}`);
             resolve(name)
-        }, 100);
+        }, 1000);
     });
 }
 
@@ -24,7 +21,7 @@ function speak(name) {
             console.log('bla, bla, bla');
             resolve(name);
             reject('Hay un error en la función speak');
-        }, 100);
+        }, 1000);
     })
 }
 
@@ -34,7 +31,7 @@ function bye(name) {
             console.log(`Adios ${name}`);
             console.log('End Process...');
             resolve();
-        }, 100);
+        }, 1000);
     })
 }
 
